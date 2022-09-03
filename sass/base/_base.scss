@@ -1,0 +1,27 @@
+// colours: 
+//     #1D3557 deepblue
+//     #457B9D lightblue
+//     #F1FAEE bg
+//     #f2f2f2 white
+//     #A8DADC lighceleste
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Inter:wght@300;400;500;600;700;900&display=swap');
+
+// font-family: 'Inter', sans-serif;
+// font-family: 'Fuzzy Bubbles', cursive;
+
+
+* {
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #F1FAEE;
+    font-family: 'Inter', sans-serif;
+}

@@ -1,28 +1,31 @@
 @charset "UTF-8";
 
-// // 1. Configuration and helpers
+// 1. Configuration and helpers
 // @use 'abstracts/variables';
 // @use 'abstracts/functions';
 // @use 'abstracts/mixins';
 
-// // 2. Vendors
-// @use 'vendors/normalize';
+// 2. Vendors
+@use 'vendors/normalize';
+@use 'vendors/reset';
 
-// // 3. Base stuff
-// @use 'base/base';
+// 3. Base stuff
+@use 'base/base';
 // @use 'base/fonts';
 // @use 'base/typography';
 // @use 'base/helpers';
 
-// // 4. Layout-related sections
-// @use 'layout/header';
-// @use 'layout/footer';
+// 4. Layout-related sections
+@use 'layout/main-header';
+@use 'layout/main-container';
+@use 'layout/titlescreen';
+@use 'layout/main-footer';
 
-// // 5. Components
-// @use 'components/button';
+// 5. Components
+@use 'components/buttons';
 
-// // 6. Page-specific styles
+// 6. Page-specific styles
 // @use 'pages/home';
 
-// // 7. Themes
+// 7. Themes
 // @use 'themes/default';

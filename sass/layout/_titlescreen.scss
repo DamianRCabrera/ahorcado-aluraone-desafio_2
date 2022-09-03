@@ -1,0 +1,12 @@
+.titlescreen {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}
