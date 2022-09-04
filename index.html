@@ -26,25 +26,27 @@
 
         <div class="titlescreen">
             <div class="titlescreen__menu">
-                <button class="btn">Nuevo juego</button>
-                <button class="btn">Agregar palabra</button>
+                <button class="btn" id="newgame">Nuevo juego</button>
+                <button class="btn" id="setup">Agregar palabra</button>
             </div>
         </div>
 
-        <div class="game" style="display: none;">
+        <div class="game hidden">
             <input type="text" class="game__input__invisible" placeholder="Ingrese una palabra">
             <div class="hangedman">
-                <div class="hangedman-zone"></div>
-                <div class="hangedman-correct"></div>
-                <div class="hangedman-fail"></div>
+                <div class="hangedman-zone">
+                    <canvas class="hangedman-zone__canvas" id="canvas"></canvas>
+                </div>
+                <div class="hangedman-charset"></div>
+                <div class="hangedman-charset"></div>
             </div>
             <div class="game-buttons">
-                <button class="btn">Nuevo juego</button>
-                <button class="btn">Rendirse</button>
+                <button class="btn" id="restartgame">Reiniciar juego</button>
+                <button class="btn" id="giveup">Rendirse</button>
             </div>
         </div>
 
-        <div class="setupscreen" style="display: none;">
+        <div class="setupscreen hidden">
             <div class="setupscreen-input">
                 <input type="text" class="setupscreen-input__text" placeholder="Ingrese una palabra">
             </div>
@@ -52,8 +54,8 @@
                 <p class="setupscreen-warning__description"><span class="setupscreen-warning__icon"><img src="img/warning.svg" alt="Atención"></span> Máximo de 8 letras</p>
             </div>
             <div class="setupscreen-buttons">
-                <button class="btn">Guardar y empezar</button>
-                <button class="btn">Cancelar</button>
+                <button class="btn" id="saveandstart">Guardar y empezar</button>
+                <button class="btn" id="cancel">Cancelar</button>
             </div>
             
         </div>

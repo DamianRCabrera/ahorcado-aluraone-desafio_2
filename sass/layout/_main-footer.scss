@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6em;
+    gap: 3.5em;
     padding: 1.5em;
     background-color: #1D3557;
     border-top-left-radius: 1em;
@@ -10,6 +10,10 @@
     box-shadow: 0px 9px 72px -16px rgba(0,0,0,0.6);
     color: #f2f2f2;
     font-size: 0.8em;
+
+    @media (min-width: 768px) {
+        gap: 6em;
+    }
 }
 
 .footer-info {
