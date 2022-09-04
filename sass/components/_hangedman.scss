@@ -1,0 +1,21 @@
+.hangedman {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+
+    &-zone {
+        display: flex;
+        flex: 1 1 70%;
+    }
+
+    &-correct {
+        display: flex;
+        flex: 1 1 15%;
+    }
+
+    &-fail {
+        display: flex;
+        flex: 1 1 15%;
+    }
+
+}

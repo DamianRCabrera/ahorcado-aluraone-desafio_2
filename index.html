@@ -23,6 +23,7 @@
     </header>
 
     <main class="main-container">
+
         <div class="titlescreen">
             <div class="titlescreen__menu">
                 <button class="btn">Nuevo juego</button>
@@ -30,17 +31,38 @@
             </div>
         </div>
 
-        <div class="game-container">
+        <div class="game" style="display: none;">
+            <input type="text" class="game__input__invisible" placeholder="Ingrese una palabra">
+            <div class="hangedman">
+                <div class="hangedman-zone"></div>
+                <div class="hangedman-correct"></div>
+                <div class="hangedman-fail"></div>
+            </div>
+            <div class="game-buttons">
+                <button class="btn">Nuevo juego</button>
+                <button class="btn">Rendirse</button>
+            </div>
+        </div>
 
-            
+        <div class="setupscreen" style="display: none;">
+            <div class="setupscreen-input">
+                <input type="text" class="setupscreen-input__text" placeholder="Ingrese una palabra">
+            </div>
+            <div class="setupscreen-warning">
+                <p class="setupscreen-warning__description"><span class="setupscreen-warning__icon"><img src="img/warning.svg" alt="Atención"></span> Máximo de 8 letras</p>
+            </div>
+            <div class="setupscreen-buttons">
+                <button class="btn">Guardar y empezar</button>
+                <button class="btn">Cancelar</button>
+            </div>
             
         </div>
     </main>
 
     <footer class="main-footer">
         <div class="footer-info">
-            <p class="footer-info__p">Creado por Damián R. Cabrera</p>
-            <p class="footer-info__p">Todos los derechos reservados &copy;</p>
+            <p class="footer-info__p">Damián R. Cabrera</p>
+            <p class="footer-info__p">Derechos reservados &copy;</p>
         </div>
 
         <nav class="footer-nav">

@@ -1,5 +1,103 @@
 .main-container {
-    width: 100vw;
-    height: 73vh;
     display: flex;
+    min-height: calc(100vh - (210px));
+
+    @media (min-width: 768px) {
+        min-height: calc(100vh - (176px));
+    }
 }
+
+.titlescreen {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+
+    &__input__invisible {
+        display: none;
+    }
+
+    &-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        padding: 1em;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            gap: 5em;
+        }
+    }
+}
+
+.setupscreen {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    padding: 4em 1em;
+    gap: 2em;
+
+    @media (min-width: 768px) {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    &-input {
+        flex: 1 1 50%;
+        align-items: center;
+        justify-content: center;
+
+        &__text {
+            min-width: 0;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            width: 100%;
+            height: 300px;
+            font-size: 30px;
+            color: #1d3557;
+
+            &::placeholder {
+                font-size: 30px;
+                color: #1d3557;
+            }
+        }
+    }
+
+    &-warning {
+        line-height: 1.5;
+        vertical-align: center;
+
+        &__icon {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    }
+
+    &-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+}
+

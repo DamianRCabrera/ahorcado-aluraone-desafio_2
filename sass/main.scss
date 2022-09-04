@@ -18,11 +18,11 @@
 // 4. Layout-related sections
 @use 'layout/main-header';
 @use 'layout/main-container';
-@use 'layout/titlescreen';
 @use 'layout/main-footer';
 
 // 5. Components
-@use 'components/buttons';
+@use 'components/btn';
+@use 'components/hangedman';
 
 // 6. Page-specific styles
 // @use 'pages/home';
