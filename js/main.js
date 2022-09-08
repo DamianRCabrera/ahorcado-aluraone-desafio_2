@@ -213,6 +213,7 @@ class Game {
         let newWord = (document.querySelector('#newword').value).trim().toUpperCase();
         if (isAZAdd.test(newWord)) {
             this.words.push(newWord);
+            newWordInput.value = '';
             this.startNewGame();
             goToGameScreen();
         } else {
