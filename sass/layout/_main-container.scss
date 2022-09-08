@@ -1,9 +1,9 @@
 .main-container {
     display: flex;
-    min-height: calc(100vh - (210px));
+    min-height: calc(100vh - (197px));
 
     @media (min-width: 768px) {
-        min-height: calc(100vh - (176px));
+        min-height: calc(100vh - (173px));
     }
 }
 
@@ -25,9 +25,9 @@
     flex-direction: column;
     flex: 1 1 100%;
 
-    &__input__invisible {
-        display: none;
-    }
+    // &__input__invisible {
+    //     display: none;
+    // }
 
     &-buttons {
         display: flex;
@@ -41,6 +41,11 @@
             flex-direction: row;
             gap: 5em;
         }
+    }
+
+    &__input__invisible{
+        width: 0;
+        opacity: 0;
     }
 }
 
@@ -100,4 +105,3 @@
         }
     }
 }
-

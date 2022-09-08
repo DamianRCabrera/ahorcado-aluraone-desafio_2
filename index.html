@@ -32,23 +32,35 @@
         </div>
 
         <div class="game hidden">
-            <input type="text" class="game__input__invisible" placeholder="Ingrese una palabra">
+            <input type="text" class="game__input__invisible" id="inputword" placeholder="Ingrese una palabra">
             <div class="hangedman">
                 <div class="hangedman-zone">
-                    <canvas class="hangedman-zone__canvas" id="canvas"></canvas>
+                    <svg class="player" width="294" height="360" viewBox="0 0 294 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="player__part-1 hidden" y="355" width="294" height="5" rx="2.5" fill="#0A3871"></rect>
+                        <rect class="player__part-3 hidden" x="80.6748" width="177.75" height="4.5" rx="2.25" fill="#0A3871" y="0"></rect>
+                        <rect class="player__part-2 hidden" x="80.6748" width="4.5" height="360" rx="2.25" fill="#0A3871" y="0"></rect>
+                        <rect class="player__part-4 hidden" x="253.925" width="4.5" height="49.5" rx="2.25" fill="#0A3871" y="0"></rect>
+                        <path class="player__part-5 hidden" fill-rule="evenodd" clip-rule="evenodd" d="M256.175 103.5C271.086 103.5 283.175 91.4117 283.175 76.5C283.175 61.5883 271.086 49.5 256.175 49.5C241.263 49.5 229.175 61.5883 229.175 76.5C229.175 91.4117 241.263 103.5 256.175 103.5ZM256.175 108C273.572 108 287.675 93.897 287.675 76.5C287.675 59.103 273.572 45 256.175 45C238.778 45 224.675 59.103 224.675 76.5C224.675 93.897 238.778 108 256.175 108Z" fill="#0A3871"></path>
+                        <rect class="player__part-6 hidden" x="253.925" y="108" width="4.5" height="135" fill="#0A3871"></rect>
+                        <rect class="player__part-10 hidden" x="254.748" y="239.625" width="4.50155" height="72" rx="2.25078" transform="rotate(30 254.748 239.625)" fill="#0A3871"></rect>
+                        <rect class="player__part-9 hidden" width="4.50385" height="72" rx="2.25193" transform="matrix(-0.866025 0.5 0.5 0.866025 257.522 239.624)" fill="#0A3871" y="0"></rect>
+                        <rect class="player__part-8 hidden" width="4.49914" height="72" rx="2.24957" transform="matrix(-0.866025 0.5 0.5 0.866025 257.52 106.875)" fill="#0A3871" y="0"></rect>
+                        <rect class="player__part-7 hidden" x="254.749" y="106.875" width="4.4994" height="72" rx="2.2497" transform="rotate(30 254.749 106.875)" fill="#0A3871"></rect>
+                        
+                    </svg>
                 </div>
-                <div class="hangedman-charset"></div>
-                <div class="hangedman-charset"></div>
+                <div class="hangedman-charset" id="toguess"></div>
+                <div class="hangedman-charset" id="failed"></div>
             </div>
             <div class="game-buttons">
-                <button class="btn" id="restartgame">Reiniciar juego</button>
+                <button class="btn" id="restart">Reiniciar juego</button>
                 <button class="btn" id="giveup">Rendirse</button>
             </div>
         </div>
 
         <div class="setupscreen hidden">
             <div class="setupscreen-input">
-                <input type="text" class="setupscreen-input__text" placeholder="Ingrese una palabra">
+                <input type="text" class="setupscreen-input__text" id="newword" placeholder="Ingrese una palabra">
             </div>
             <div class="setupscreen-warning">
                 <p class="setupscreen-warning__description"><span class="setupscreen-warning__icon"><img src="img/warning.svg" alt="Atención"></span> Máximo de 8 letras</p>
